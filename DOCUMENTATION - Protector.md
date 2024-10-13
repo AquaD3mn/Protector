@@ -280,7 +280,3 @@
 - **Firejail Installation**: Adds the Firejail PPA and installs the Firejail package along with its profiles.
 - **Configure Firejail**: Sets up default profiles for installed applications, improving application security by isolating them within restricted environments.
 - **Verify Firejail Installation**: Checks the installed version of Firejail to confirm successful installation and configuration.
-
----
-
-This concludes the documentation for the **Protector** Bash script. For further assistance or contributions, please feel free to reach out!
