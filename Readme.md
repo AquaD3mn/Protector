@@ -2,9 +2,6 @@
 ### _Enhance Your Linux OS Security_
 
 ![OS Hardening](https://github.com/AquaD3mn/Protector/blob/main/Os%20hardening.jpeg)
-
-[![Build Status](https://travis-ci.org/your-repo/os-hardening-script.svg?branch=master)](https://github.com/AquaD3mn/Protector/blob/main)
-
 This script is designed to enhance the security of a Linux operating system by applying various hardening techniques.
 
 -  Run the script as root
