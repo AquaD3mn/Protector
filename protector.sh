@@ -222,29 +222,29 @@ run_command "sudo ufw allow out https comment 'allow HTTPS'"
 # Allow user-defined UDP outgoing ports
 IFS=',' read -r -a udp_out_ports <<< "$UDP_OUT_PORTS"
 for port in "${udp_out_ports[@]}"; do
-    run_command "sudo ufw allow out proto udp port $port"
+    run_command "sudo ufw allow proto udp port $port"
 done
 
 # Allow user-defined UDP incoming ports
 IFS=',' read -r -a udp_in_ports <<< "$UDP_IN_PORTS"
 for port in "${udp_in_ports[@]}"; do
-    run_command "sudo ufw allow in proto udp port $port"
+    run_command "sudo ufw allow proto udp port $port"
 done
 
 # Allow user-defined TCP outgoing ports
 IFS=',' read -r -a tcp_out_ports <<< "$TCP_OUT_PORTS"
 for port in "${tcp_out_ports[@]}"; do
-    run_command "sudo ufw allow out proto tcp port $port"
+    run_command "sudo ufw allow proto tcp port $port"
 done
 
 # Allow user-defined TCP incoming ports
 IFS=',' read -r -a tcp_in_ports <<< "$TCP_IN_PORTS"
 for port in "${tcp_in_ports[@]}"; do
-    run_command "sudo ufw allow in proto tcp port $port"
+    run_command "sudo ufw allow proto tcp port $port"
 done
 
 # Allow MySQL port
-run_command "sudo ufw allow in proto tcp port $MYSQL_PORT comment 'MySQL service'"
+run_command "sudo ufw allow proto tcp port $MYSQL_PORT comment 'MySQL service'"
 
 # Allow DNS
 run_command "sudo ufw allow out 53/tcp"
